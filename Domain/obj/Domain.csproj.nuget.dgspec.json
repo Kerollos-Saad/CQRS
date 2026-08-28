@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {}
+    "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {
+    "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
+        "projectPath": "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "d:\\ASP .NET Core API\\CQRS\\Domain\\obj\\",
+        "outputPath": "D:\\ASP .NET Core API\\CQRS\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

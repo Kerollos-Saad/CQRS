@@ -13,3 +13,4 @@ D:\ASP .NET Core API\CQRS\Application\obj\Debug\net9.0\Application.dll
 D:\ASP .NET Core API\CQRS\Application\obj\Debug\net9.0\refint\Application.dll
 D:\ASP .NET Core API\CQRS\Application\obj\Debug\net9.0\Application.pdb
 D:\ASP .NET Core API\CQRS\Application\obj\Debug\net9.0\ref\Application.dll
+D:\ASP .NET Core API\CQRS\Application\obj\Debug\net9.0\Application.sourcelink.json

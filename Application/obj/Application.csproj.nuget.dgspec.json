@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj": {}
+    "D:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj": {}
   },
   "projects": {
-    "d:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj": {
+    "D:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "d:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj",
+        "projectPath": "D:\\ASP .NET Core API\\CQRS\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "d:\\ASP .NET Core API\\CQRS\\Application\\obj\\",
+        "outputPath": "D:\\ASP .NET Core API\\CQRS\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {
-                "projectPath": "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj"
+              "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj"
               }
             }
           }
@@ -54,6 +54,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -74,14 +84,14 @@
         }
       }
     },
-    "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {
+    "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
+        "projectPath": "D:\\ASP .NET Core API\\CQRS\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "d:\\ASP .NET Core API\\CQRS\\Domain\\obj\\",
+        "outputPath": "D:\\ASP .NET Core API\\CQRS\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
