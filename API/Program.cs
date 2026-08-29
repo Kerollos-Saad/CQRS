@@ -1,11 +1,11 @@
 using Application.Behaviors;
 using FluentValidation;
 using Infrastructure.Data;
+using Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
 
 builder.Services.AddMediatR(options =>
 {
@@ -16,6 +16,10 @@ builder.Services.AddValidatorsFromAssembly(typeof(Application.IAssemblyMarker).A
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=app.db"));
 
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+builder.Services.AddScoped<IAppDbContext, AppDbContext>();
+
+var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
 
