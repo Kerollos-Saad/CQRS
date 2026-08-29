@@ -1,4 +1,5 @@
 using Domain.Todos;
+using Exceptions;
 using Interfaces;
 using MediatR;
 
@@ -11,7 +12,7 @@ public sealed class UpdateTodoCommandHandler(IAppDbContext context) : IRequestHa
         var todo = await context.Todos.FindAsync([request.Id], cancellationToken);
         if (todo is null)
         {
-            throw new Exception($"Todo with Id {request.Id} not found");
+            throw new NotFoundException(nameof(Todo), request.Id);
         }
         todo.Title = request.Title;
         todo.Completed = request.IsCompleted;

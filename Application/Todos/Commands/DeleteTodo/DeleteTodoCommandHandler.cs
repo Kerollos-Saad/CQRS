@@ -1,4 +1,5 @@
 using Domain.Todos;
+using Exceptions;
 using Interfaces;
 using MediatR;
 
@@ -10,7 +11,7 @@ public sealed class DeleteTodoCommandHandler(IAppDbContext context) : IRequestHa
         var todo = await context.Todos.FindAsync([request.Id], cancellationToken);
         if (todo is null)
         {
-            throw new Exception($"Todo with Id {request.Id} not found");
+            throw new NotFoundException(nameof(Todo), request.Id);
         }
         context.Todos.Remove(todo);
         await context.SaveChangesAsync(cancellationToken);
